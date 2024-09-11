@@ -18,7 +18,7 @@ const SearchItem: React.FC<SearchItemProps> = ({ task, onEdit, onUndo }) => {
   };
 
   const formattedDate = task.completedAt
-    ? new Date(task.completedAt).toLocaleString("en-GB", { timeZone: "UTC" })
+    ? new Date(task.completedAt).toLocaleString("en-NG", { timeZone: "Africa/Lagos" })
     : "";
 
   return (
